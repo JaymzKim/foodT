@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by http://cafe.naver.com/citrineframework
+	You can freely copy, distribute, modify for commercial or non-commercial purposes.
+-->
+<MOML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui.xsd" version="1.1.1">
+
+	<FUNCTION id="menuCheck">
+		<CMD condition="menuWindow.visible == 'invisible'" cmd="function.menuVisible" elseCmd="function.menuInvisible" />
+	</FUNCTION>
+
+	<FUNCTION id="commentCheck">
+		<CMD condition="emptyWindow.visible == 'invisible'" cmd="function.commentVisible" elseCmd="function.commentInvisible" />
+	</FUNCTION>
+
+	<FUNCTION id="menuVisible">
+		<CMD cmd="animation.flyIn('menuWindow', 360, 0, 0, 0, 'elasticOut3', 500, '')" />
+	</FUNCTION>
+
+	<FUNCTION id="menuInvisible">
+		<CMD cmd="animation.flyOut('menuWindow', 360, 0, 0, 0, 'eraseOut3', 100, '')" />
+	</FUNCTION>
+
+	<FUNCTION id="commentVisible">
+		<CMD cmd="animation.flyIn('emptyWindow', 720, 0, 0, 0, 'elasticOut3', 500, '')" />
+	</FUNCTION>
+
+	<FUNCTION id="commentInvisible">
+		<CMD cmd="animation.flyOut('emptyWindow', 720, 0, 0, 0, 'eraseOut3', 100, '')" />
+	</FUNCTION>
+
+	<UILAYOUT portrait="720,1230" landscape="720,1230">
+		<WINDOW layout="0,0,720,1230" align="relative" defaultImg="#ffffff">
+			<WINDOW layout="0,0,720,96" align="relative" defaultImg="#ee8250">
+				<BUTTON layout="0,0,96,96" defaultImg="res/button_title_menu.png" onClick="function.menuCheck" />
+				<IMAGE layout="247,0,223,96" defaultImg="res/title_foodtalk.png" />
+				<BUTTON layout="624,0,118,96" defaultImg="res/button_title_create.png" onClick="function.commentCheck" />
+			</WINDOW>
+			<WINDOW layout="0,96,720,96" align="linear:horizontal">
+				<RADIO layout="180,96" groupId="tabMenu" style="button" defaultImg="res/menu_icon_home_normal.png" checkedImg="res/menu_icon_home_select.png" selected="true"
+					onClick="start_navigationContainer.selectedItem = 'home'">
+				</RADIO>
+				<LABEL layout="2,64" defaultImg="#cacbd1" margin="0,16,0,0" />
+				<RADIO layout="180,96" groupId="tabMenu" style="button" defaultImg="res/menu_icon_contest_normal.png" checkedImg="res/menu_icon_contest_select.png" onClick="start_navigationContainer.selectedItem = 'contest'" />
+				<LABEL layout="2,64" defaultImg="#cacbd1" margin="0,16,0,0" />
+				<RADIO layout="180,96" groupId="tabMenu" style="button" defaultImg="res/menu_icon_feed_normal.png" checkedImg="res/menu_icon_feed_select.png" onClick="start_navigationContainer.selectedItem = 'feed'" />
+				<LABEL layout="2,64" defaultImg="#cacbd1" margin="0,16,0,0" />
+				<RADIO layout="180,96" groupId="tabMenu" style="button" defaultImg="res/menu_icon_me_normal.png" checkedImg="res/menu_icon_me_select.png" onClick="start_navigationContainer.selectedItem = 'me'" />
+			</WINDOW>
+			<LABEL layout="0,192,720,2" defaultImg="#cacbd1" />
+			<NAVIGATIONCONTAINER id="start_navigationContainer" layout="0,194,720,1036" selectedItem="home">
+				<VIEWITEM id="home" src="home.xml" transitionInEffect="none" transitionOutEffect="none" />
+				<VIEWITEM id="contest" src="contest.xml" transitionInEffect="none" transitionOutEffect="none" />
+				<VIEWITEM id="feed" src="feed.xml" transitionInEffect="none" transitionOutEffect="none" />
+				<VIEWITEM id="me" src="me.xml" transitionInEffect="none" transitionOutEffect="none" />
+			</NAVIGATIONCONTAINER>
+
+			<WINDOW id="menuWindow" layout="0,96,720,1134" align="relative" defaultImg="#ebebeb" visible="invisible">
+				<IMAGE layout="333,33,60,60" defaultImg="res/channel_icon_featured.png" />
+				<LABEL layout="0,102,720,45" text="메인으로" fontSize="30" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#545454" />
+				<STYLEBUTTON layout="0,182,720,62" defaultImg="#d9d9d9" borderStyle="solid:2|#d3d3d3" text="채널 선택" fontSize="30" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#000000"
+					onClick="" />
+				<WINDOW layout="0,244,720,300" align="linear:vertical">
+					<WINDOW layout="720,94" align="relative">
+						<IMAGE layout="29,18,60,60" defaultImg="res/channel_korean_food.png" />
+						<LABEL layout="117,0,720,94" text="한식" fontSize="30" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#737373" />
+					</WINDOW>
+					<LABEL layout="720,2" defaultImg="#d6d6d6" />
+					<WINDOW layout="720,94" align="relative">
+						<IMAGE layout="29,18,60,60" defaultImg="res/channel_korean_food.png" />
+						<LABEL layout="117,0,720,94" text="중식" fontSize="30" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#737373" />
+					</WINDOW>
+					<LABEL layout="720,2" defaultImg="#d6d6d6" />
+					<WINDOW layout="720,94" align="relative">
+						<IMAGE layout="29,18,60,60" defaultImg="res/channel_korean_food.png" />
+						<LABEL layout="117,0,720,94" text="양식" fontSize="30" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#737373" />
+					</WINDOW>
+					<LABEL layout="720,2" defaultImg="#d6d6d6" />
+				</WINDOW>
+			</WINDOW>
+
+			<WINDOW id="emptyWindow" layout="169,124,523,170" defaultImg="#ffffff" align="linear:horizontal" visible="invisible">
+				<BUTTON layout="174,170" defaultImg="res/empty_ic_recipe.png" />
+				<LABEL layout="2,109" defaultImg="#d6d6d6" margin="0,25,0,0" />
+				<BUTTON layout="174,170" defaultImg="res/empty_ic_restaurant.png" />
+				<LABEL layout="2,109" defaultImg="#d6d6d6" margin="0,25,0,0" />
+				<BUTTON layout="174,170" defaultImg="res/empty_ic_story.png" />
+			</WINDOW>
+		</WINDOW>
+	</UILAYOUT>
+</MOML>
+

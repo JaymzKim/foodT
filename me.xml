@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by http://cafe.naver.com/citrineframework
+	You can freely copy, distribute, modify for commercial or non-commercial purposes.
+-->
+<MOML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui.xsd" version="1.1.1">
+	<UILAYOUT portrait="720,1036" landscape="720,1036">
+		<WINDOW layout="0,0,720,1036" defaultImg="#ffffff" scroll="vertical" scrollBarVisible="false">
+			<WINDOW layout="0,0,720,406" defaultImg="res/me_cover_image.png">
+				<IMAGE layout="276,110,172,172" defaultImg="res/me_profile_default.png" />
+				<BUTTON layout="89,145,76,76" defaultImg="res/me_profile_btn_like_count_normal.png" pressedImg="res/me_profile_btn_like_count_press.png" />
+				<BUTTON layout="558,145,76,76" defaultImg="res/me_message_normal.png" pressedImg="res/me_message_press.png" />
+				<LABEL layout="89,232,76,40" text="0" fontSize="25" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#ffffff" textShadow="#90000000" />
+				<LABEL layout="558,232,76,40" text="쪽지함" fontSize="25" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#ffffff" textShadow="#90000000" />
+				<LABEL layout="0,295,720,45" text="LOGEO" fontSize="35" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#ffffff" textShadow="#90000000" />
+			</WINDOW>
+			<WINDOW layout="0,406,720,100" align="linear:horizontal">
+				<STYLEBUTTON layout="240,100" defaultImg="#f4efe5" borderStyle="solid:2|#dfdad1" align="linear:vertical|subCenter">
+					<LABEL layout="240,50" text="0" fontSize="25" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#5e5a4e" />
+					<LABEL layout="240,50" text="따라한 포스트" fontSize="25" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#5e5a4e" />
+				</STYLEBUTTON>
+				<STYLEBUTTON layout="240,100" defaultImg="#f4efe5" borderStyle="solid:2|#dfdad1" align="linear:vertical|subCenter">
+					<LABEL layout="240,50" text="1" fontSize="25" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#5e5a4e" />
+					<LABEL layout="240,50" text="팔로잉" fontSize="25" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#5e5a4e" />
+				</STYLEBUTTON>
+				<STYLEBUTTON layout="240,100" defaultImg="#f4efe5" borderStyle="solid:2|#dfdad1" align="linear:vertical|subCenter">
+					<LABEL layout="240,50" text="0" fontSize="25" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#5e5a4e" />
+					<LABEL layout="240,50" text="팔로워" fontSize="25" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#5e5a4e" />
+				</STYLEBUTTON>
+			</WINDOW>
+			<WINDOW layout="0,506,720,100" align="linear:horizontal">
+				<LABEL layout="126,100" text="내 포스트" fontSize="30" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#76736c" margin="20,0,0,0" />
+				<LABEL layout="297,100" text="0" fontSize="30" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#df5a29" />
+				<BUTTON layout="254,56" defaultImg="res/notice_bottom_btn_normal.png" pressedImg="res/notice_bottom_btn_press.png" align="linear:horizontal|subCenter" margin="0,20,0,0">
+					<LABEL layout="190,56" text="작성중인 포스트" fontSize="25" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#76736c" margin="20,0,0,0" />
+					<LABEL layout="50,56" text="0" fontSize="25" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#df5a29" />
+				</BUTTON>
+			</WINDOW>
+			<LABEL layout="0,606,720,2" defaultImg="#d6d6d6" />
+			<IMAGE layout="289,717,143,147" defaultImg="res/empty_post_icon.png" />
+			<LABEL layout="0,890,720,45" text="첫 번째 나만의 포스트를 작성해보세요." fontSize="35" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#b7b7b7" />
+		</WINDOW>
+	</UILAYOUT>
+</MOML>
+		     

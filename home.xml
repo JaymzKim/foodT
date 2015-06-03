@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by http://cafe.naver.com/citrineframework
+	You can freely copy, distribute, modify for commercial or non-commercial purposes.
+-->
+<MOML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui.xsd" version="1.1.1">
+
+	<FUNCTION id="faviCheck">
+		<CMD condition="caller.defaultImg == 'res/btn_unlike_count_normal.png'" cmd="caller.defaultImg = 'res/btn_like_count_normal.png'" elseCmd="caller.defaultImg = 'res/btn_unlike_count_normal.png'"
+			delay="500" />
+	</FUNCTION>
+
+	<UILAYOUT portrait="720,1036" landscape="720,1036">
+		<WINDOW layout="0,0,720,1036" defaultImg="#ffffff" align="linear:vertical" scroll="vertical" scrollBarVisible="invisible">
+			<WINDOW layout="720,466" align="relative" defaultImg="res/todayImage.png">
+				<IMAGE layout="194,50,333,134" defaultImg="res/main_pickup_label.png" />
+				<LABEL layout="0,200,720,60" text="쫀득 따뜻한 감자전" fontSize="50" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#ffffff" textShadow="#90000000" />
+				<LABEL layout="0,277,720,35" text="감자전" fontSize="20" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#ffffff" textShadow="#90000000" />
+				<LABEL layout="0,317,720,35" text="Lets make it!" fontSize="25" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#ffffff" textShadow="#90000000" />
+			</WINDOW>
+			<WINDOW layout="720,123" defaultImg="res/notice_bottom_bg.png" align="relative">
+				<IMAGE layout="32,56,296,63" defaultImg="res/main_title_theme.png" />
+				<IMAGE layout="570,71,138,39" defaultImg="res/main_seemore.png" />
+			</WINDOW>
+			<WINDOW layout="720,466" align="relative" defaultImg="res/foodtalk.png" />
+			<WINDOW layout="720,466" align="relative" defaultImg="res/detail1.png" />
+			<WINDOW layout="720,123" defaultImg="res/notice_bottom_bg.png" align="relative">
+				<IMAGE layout="32,56,296,63" defaultImg="res/main_title_featured.png" />
+				<IMAGE layout="570,71,138,39" defaultImg="res/main_seemore.png" />
+			</WINDOW>
+			<WINDOW layout="720,466" align="relative" defaultImg="res/detail2.png">
+				<IMAGE layout="31,296,107,44" defaultImg="res/feed_label_recipe.png" />
+				<LABEL layout="25,353,450,45" text="믹스베리 매시트포테이토" fontSize="40" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#ffffff" textShadow="#90000000" />
+				<LABEL layout="25,406,450,40" text="by ESSEN" fontSize="30" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#ffffff" textShadow="#90000000" />
+				<BUTTON layout="596,336,105,105" defaultImg="res/btn_unlike_count_normal.png" onClick="function.faviCheck" />
+			</WINDOW>
+
+			<WINDOW layout="720,466" align="relative" defaultImg="res/detail3.png" margin="0,20,0,0">
+				<IMAGE layout="31,296,107,44" defaultImg="res/feed_label_recipe.png" />
+				<LABEL layout="25,353,450,45" text="버섯레몬크림파스타" fontSize="40" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#ffffff" textShadow="#90000000" />
+				<LABEL layout="25,406,450,40" text="by ESSEN" fontSize="30" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#ffffff" textShadow="#90000000" />
+				<BUTTON layout="596,336,105,105" defaultImg="res/btn_unlike_count_normal.png" onClick="function.faviCheck" />
+			</WINDOW>
+		</WINDOW>
+	</UILAYOUT>
+</MOML>
+		     

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by http://cafe.naver.com/citrineframework
+	You can freely copy, distribute, modify for commercial or non-commercial purposes.
+-->
+<MOML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui.xsd" version="1.1.1">
+	<FUNCTION id="logoAniTo">
+		<CMD cmd="animation.hide('bg', 'fade', '', 1500, '')" />
+	</FUNCTION>
+
+	<FUNCTION id="pageSetting(index)">
+		<CMD cmd="mainPage2.defaultImg = 'res/appintro'+userVariable.aniIndex+'.jpg'" />
+		<CMD cmd="userVariable.aniIndex = math.add(index, 1)" />
+		<CMD condition="userVariable.aniIndex == 1"
+			cmd="lineLabel.defaultImg='#b33f43',signBtn.defaultImg='#ff5a5f',signBtn.pressedImg='#c54549',loginBtn.defaultImg='#ff5a5f',loginBtn.pressedImg='#c54549',first.defaultImg='#ffffff',second.defaultImg='#80ffffff',third.defaultImg='#80ffffff',fourth.defaultImg='#80ffffff'" />
+		<CMD condition="userVariable.aniIndex == 2"
+			cmd="lineLabel.defaultImg='#b78000',signBtn.defaultImg='#ffb400',signBtn.pressedImg='#d29400',loginBtn.defaultImg='#ffb400',loginBtn.pressedImg='#d29400',first.defaultImg='#80ffffff',second.defaultImg='#ffffff',third.defaultImg='#80ffffff',fourth.defaultImg='#80ffffff'" />
+		<CMD condition="userVariable.aniIndex == 3"
+			cmd="lineLabel.defaultImg='#897d45',signBtn.defaultImg='#b4a76c',signBtn.pressedImg='#9b8d4f',loginBtn.defaultImg='#b4a76c',loginBtn.pressedImg='#9b8d4f',first.defaultImg='#80ffffff',second.defaultImg='#80ffffff',third.defaultImg='#ffffff',fourth.defaultImg='#80ffffff'" />
+		<CMD condition="userVariable.aniIndex == 4"
+			cmd="lineLabel.defaultImg='#00474f',signBtn.defaultImg='#007a87',signBtn.pressedImg='#005b66',loginBtn.defaultImg='#007a87',loginBtn.pressedImg='#005b66',first.defaultImg='#80ffffff',second.defaultImg='#80ffffff',third.defaultImg='#80ffffff',fourth.defaultImg='#ffffff'" />
+		<CMD condition="userVariable.aniIndex == 1" cmd="titleLabel.text = 'UNIQUE, AMAZING PLACES TO STAY - HOSTED BY REAL PEOPLE', subLabel.visible='visible', subLabel.text=''" />
+		<CMD condition="userVariable.aniIndex == 2" cmd="titleLabel.text = 'FIND'+'\n'+'THE'+'\n'+'PERFECT'+'\n'+'SPACE', subLabel.visible='visible', subLabel.text='or simply browse the world?s most inspiring accommodations'" />
+		<CMD condition="userVariable.aniIndex == 3" cmd="titleLabel.text = 'BOOK IT'+'\n'+'IN A'+'\n'+'SNAP', subLabel.visible='visible', subLabel.text='once your host accepts, you?re good to go!'" />
+		<CMD condition="userVariable.aniIndex == 4" cmd="titleLabel.text = 'YOU＇RE'+'\n'+'ON'+'\n'+'YOUR'+'\n'+'WAY', subLabel.visible='visible', subLabel.text='comminicate with your host and access your itinerary on the go'" />
+		<CMD cmd="mainPage.defaultImg = 'res/appintro'+userVariable.aniIndex+'.jpg'" />
+		<CMD cmd="animation.show('mainPage', 'fade', '', 500, '')" />
+		<CMD cmd="animation.flyIn('labelWindow', 720, 0,1, 'bounceOut', 500, '')" />
+	</FUNCTION>
+
+	<FUNCTION id="prevPageSetting(index)">
+		<CMD cmd="mainPage2.defaultImg = 'res/appintro'+userVariable.aniIndex+'.jpg'" />
+		<CMD cmd="userVariable.aniIndex = math.sub(index, 1)" />
+		<CMD condition="userVariable.aniIndex == 1"
+			cmd="lineLabel.defaultImg='#b33f43',signBtn.defaultImg='#ff5a5f',signBtn.pressedImg='#c54549',loginBtn.defaultImg='#ff5a5f',loginBtn.pressedImg='#c54549',first.defaultImg='#ffffff',second.defaultImg='#80ffffff',third.defaultImg='#80ffffff',fourth.defaultImg='#80ffffff'" />
+		<CMD condition="userVariable.aniIndex == 2"
+			cmd="lineLabel.defaultImg='#b78000',signBtn.defaultImg='#ffb400',signBtn.pressedImg='#dd9b00',loginBtn.defaultImg='#ffb400',loginBtn.pressedImg='#dd9b00',first.defaultImg='#80ffffff',second.defaultImg='#ffffff',third.defaultImg='#80ffffff',fourth.defaultImg='#80ffffff'" />
+		<CMD condition="userVariable.aniIndex == 3"
+			cmd="lineLabel.defaultImg='#897d45',signBtn.defaultImg='#b4a76c',signBtn.pressedImg='#a49653',loginBtn.defaultImg='#b4a76c',loginBtn.pressedImg='#a49653',first.defaultImg='#80ffffff',second.defaultImg='#80ffffff',third.defaultImg='#ffffff',fourth.defaultImg='#80ffffff'" />
+		<CMD condition="userVariable.aniIndex == 4"
+			cmd="lineLabel.defaultImg='#00474f',signBtn.defaultImg='#007a87',signBtn.pressedImg='#006773',loginBtn.defaultImg='#007a87',loginBtn.pressedImg='#006773',first.defaultImg='#80ffffff',second.defaultImg='#80ffffff',third.defaultImg='#80ffffff',fourth.defaultImg='#ffffff'" />
+		<CMD condition="userVariable.aniIndex == 1" cmd="titleLabel.text = 'UNIQUE, AMAZING PLACES TO STAY - HOSTED BY REAL PEOPLE', subLabel.visible='visible', subLabel.text=''" />
+		<CMD condition="userVariable.aniIndex == 2" cmd="titleLabel.text = 'FIND'+'\n'+'THE'+'\n'+'PERFECT'+'\n'+'SPACE', subLabel.visible='visible', subLabel.text='or simply browse the world?s most inspiring accommodations'" />
+		<CMD condition="userVariable.aniIndex == 3" cmd="titleLabel.text = 'BOOK IT'+'\n'+'IN A'+'\n'+'SNAP', subLabel.visible='visible', subLabel.text='once your host accepts, you?re good to go!'" />
+		<CMD condition="userVariable.aniIndex == 4" cmd="titleLabel.text = 'YOU＇RE'+'\n'+'ON'+'\n'+'YOUR'+'\n'+'WAY', subLabel.visible='visible', subLabel.text='comminicate with your host and access your itinerary on the go'" />
+		<CMD cmd="mainPage.defaultImg = 'res/appintro'+userVariable.aniIndex+'.jpg'" />
+		<CMD cmd="animation.show('mainPage', 'fade', '', 500, '')" />
+		<CMD cmd="animation.flyIn('labelWindow', -720, 0,1, 'bounceOut', 500, '')" />
+	</FUNCTION>
+	<FUNCTION id="gellayChange(index)">
+		<CMD cmd="userVariable.coverflowIndex = math.add(index,1)" />
+		<CMD cmd="titleLogo.defaultImg = xpath.evaluateEx(file.read('data/galleryfirstdata.xml'), '/DATA/ITEM[' + userVariable.coverflowIndex + ']/@image2')" />
+		<CMD cmd="nameLabel.text = xpath.evaluateEx(file.read('data/galleryfirstdata.xml'), '/DATA/ITEM[' + userVariable.coverflowIndex + ']/@name')" />
+		<CMD condition="userVariable.coverflowIndex == 1"
+			cmd="first.defaultImg='res/tutorial_page_dot_select.png',second.defaultImg='res/tutorial_page_dot_normal.png',third.defaultImg='res/tutorial_page_dot_normal.png',fourth.defaultImg='res/tutorial_page_dot_normal.png',five.defaultImg='res/tutorial_page_dot_normal.png',six.defaultImg='res/tutorial_page_dot_normal.png'" />
+		<CMD condition="userVariable.coverflowIndex == 2"
+			cmd="first.defaultImg='res/tutorial_page_dot_normal.png',second.defaultImg='res/tutorial_page_dot_select.png',third.defaultImg='res/tutorial_page_dot_normal.png',fourth.defaultImg='res/tutorial_page_dot_normal.png',five.defaultImg='res/tutorial_page_dot_normal.png',six.defaultImg='res/tutorial_page_dot_normal.png'" />
+		<CMD condition="userVariable.coverflowIndex == 3"
+			cmd="first.defaultImg='res/tutorial_page_dot_normal.png',second.defaultImg='res/tutorial_page_dot_normal.png',third.defaultImg='res/tutorial_page_dot_select.png',fourth.defaultImg='res/tutorial_page_dot_normal.png',five.defaultImg='res/tutorial_page_dot_normal.png',six.defaultImg='res/tutorial_page_dot_normal.png'" />
+		<CMD condition="userVariable.coverflowIndex == 4"
+			cmd="first.defaultImg='res/tutorial_page_dot_normal.png',second.defaultImg='res/tutorial_page_dot_normal.png',third.defaultImg='res/tutorial_page_dot_normal.png',fourth.defaultImg='res/tutorial_page_dot_select.png',five.defaultImg='res/tutorial_page_dot_normal.png',six.defaultImg='res/tutorial_page_dot_normal.png'" />
+		<CMD condition="userVariable.coverflowIndex == 5"
+			cmd="first.defaultImg='res/tutorial_page_dot_normal.png',second.defaultImg='res/tutorial_page_dot_normal.png',third.defaultImg='res/tutorial_page_dot_normal.png',fourth.defaultImg='res/tutorial_page_dot_normal.png',five.defaultImg='res/tutorial_page_dot_select.png',six.defaultImg='res/tutorial_page_dot_normal.png'" />
+		<CMD condition="userVariable.coverflowIndex == 6"
+			cmd="first.defaultImg='res/tutorial_page_dot_normal.png',second.defaultImg='res/tutorial_page_dot_normal.png',third.defaultImg='res/tutorial_page_dot_normal.png',fourth.defaultImg='res/tutorial_page_dot_normal.png',five.defaultImg='res/tutorial_page_dot_normal.png',six.defaultImg='res/tutorial_page_dot_select.png'" />
+	</FUNCTION>
+	<CMD cmd="function.logoAniTo" />
+	<CMD cmd="userVariable.coverflowIndex = 1" />
+	<UILAYOUT portrait="720,1230" landscape="720,1230">
+		<WINDOW layout="0,0,720,1230" defaultImg="res/tutorial_bg.png">
+			<WINDOW layout="207,40,720,84" align="linear:vertical|subCenter">
+				<IMAGE id="titleLogo" layout="303,84" defaultImg="res/tutorial_title_foodtalk.png" />
+			</WINDOW>
+			<GALLERY id="gallery" defaultImg="#00c8c8c8" layout="0,180,720,750" onChange="function.gellayChange(gallery.index)" scaleType="fill" imagePath="./@image" dataList="/DATA/ITEM"
+				dataSource="data/galleryfirstdata.xml" />
+			<LABEL id="nameLabel" layout="148,984,428,85" text="{xpath.evaluateEx(file.read('data/galleryfirstdata.xml'), '/DATA/ITEM[1]/@name')}" fontSize="25" minFontSize="-1" textAlign="center"
+				fontStyle="bold" multiLine="true" textColor="#ffffff" />
+			<WINDOW layout="0,1080,720,40" align="linear:horizontal|center">
+				<STYLEBUTTON id="first" layout="15,15" shape="circle" defaultImg="res/tutorial_page_dot_select.png" />
+				<STYLEBUTTON id="second" layout="15,15" shape="circle" defaultImg="res/tutorial_page_dot_normal.png" margin="20,0,0,0" />
+				<STYLEBUTTON id="third" layout="15,15" shape="circle" defaultImg="res/tutorial_page_dot_normal.png" margin="20,0,0,0" />
+				<STYLEBUTTON id="fourth" layout="15,15" shape="circle" defaultImg="res/tutorial_page_dot_normal.png" margin="20,0,0,0" />
+				<STYLEBUTTON id="five" layout="15,15" shape="circle" defaultImg="res/tutorial_page_dot_normal.png" margin="20,0,0,0" />
+				<STYLEBUTTON id="six" layout="15,15" shape="circle" defaultImg="res/tutorial_page_dot_normal.png" margin="20,0,0,0" />
+			</WINDOW>
+			<BUTTON layout="139,1126,445,70" defaultImg="res/tutorial_btn_skip_normal.png" pressedImg="res/tutorial_btn_skip_press.png" onClick="container.open('login.xml','root.loginMain')" />
+		</WINDOW>
+		<WINDOW id="bg" layout="0,0,720,1230" defaultImg="res/splash.png" />
+	</UILAYOUT>
+</MOML>
+		

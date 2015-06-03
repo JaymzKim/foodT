@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by ApplusForm.com on 2013.8.6
+
+	Permission is granted to copy, distribute, modify under the terms of ApplusForm License.
+
+	Copyright (C) 2013 ApplusForm.com All rights reserved.
+-->
+<MOML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui.xsd" version="1.1.1">
+	<UILAYOUT portrait="720,1230" landscape="720,1230">
+		<POPUP layout="0,0,720,1230" defaultImg="#ededed" onClick="action:close()" align="relative">
+			<WINDOW layout="0,0,720,96" align="relative" defaultImg="#f18553">
+				<LABEL layout="0,0,720,96" text="회원가입" fontSize="30" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#ffffff" />
+				<LABEL layout="0,0,720,96" text="완료" fontSize="30" minFontSize="-1" textAlign="vCenter|right" fontStyle="bold" textColor="#ffffff" padding="0,0,30,0" onClick="container.close()" />
+			</WINDOW>
+			<IMAGE layout="276,152,172,172" defaultImg="res/me_profile_default.png" />
+			<WINDOW layout="0,348,720,500" align="linear:vertical">
+				<WINDOW layout="720,97" align="relative">
+					<LABEL layout="36,0,180,96" text="아이디" fontSize="30" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#9e9e9e" />
+					<EDIT layout="227,0,476,97" text="" placeholder="me@example.com" placeholderColor="#cbcbcb" returnKeyType="next" fontSize="30" textColor="#000000" textAlign="vCenter" defaultImg="#00000000"
+						language="english" />
+				</WINDOW>
+				<LABEL layout="684,2" defaultImg="#bebebe" margin="36,0,0,0" />
+				<WINDOW layout="720,97" align="relative">
+					<LABEL layout="36,0,180,96" text="패스워드" fontSize="30" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#9e9e9e" />
+					<EDIT layout="227,0,476,97" text="" placeholder="" textFormat="textPassword" placeholderColor="#cbcbcb" returnKeyType="next" fontSize="30" textColor="#000000" textAlign="vCenter"
+						defaultImg="#00000000" language="english" />
+				</WINDOW>
+				<LABEL layout="684,2" defaultImg="#bebebe" margin="36,0,0,0" />
+				<WINDOW layout="720,97" align="relative">
+					<LABEL layout="36,0,180,96" text="패스워드 확인" fontSize="30" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#9e9e9e" />
+					<EDIT layout="227,0,476,97" text="" placeholder="" textFormat="textPassword" placeholderColor="#cbcbcb" returnKeyType="next" fontSize="30" textColor="#000000" textAlign="vCenter"
+						defaultImg="#00000000" language="english" />
+				</WINDOW>
+				<LABEL layout="684,2" defaultImg="#bebebe" margin="36,0,0,0" />
+				<WINDOW layout="720,97" align="relative">
+					<LABEL layout="36,0,180,96" text="이름" fontSize="30" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#9e9e9e" />
+					<EDIT layout="227,0,476,97" text="" placeholder="" placeholderColor="#cbcbcb" returnKeyType="next" fontSize="30" textColor="#000000" textAlign="vCenter" defaultImg="#00000000"
+						language="english" />
+				</WINDOW>
+				<LABEL layout="684,2" defaultImg="#bebebe" margin="36,0,0,0" />
+				<WINDOW layout="720,97" align="relative">
+					<LABEL layout="36,0,180,96" text="전화번호" fontSize="30" minFontSize="-1" textAlign="center" fontStyle="bold" textColor="#9e9e9e" />
+					<EDIT layout="227,0,476,97" text="" placeholder="" placeholderColor="#cbcbcb" returnKeyType="next" fontSize="30" textColor="#000000" textAlign="vCenter" defaultImg="#00000000"
+						language="english" />
+				</WINDOW>
+				<LABEL layout="684,2" defaultImg="#bebebe" margin="36,0,0,0" />
+
+			</WINDOW>
+		</POPUP>
+	</UILAYOUT>
+</MOML>

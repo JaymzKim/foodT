@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by http://cafe.naver.com/citrineframework
+	You can freely copy, distribute, modify for commercial or non-commercial purposes.
+-->
+<MOML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui.xsd" version="1.1.1">
+	<UILAYOUT portrait="720,1230" landscape="720,1230">
+		<WINDOW layout="0,0,720,1230" defaultImg="#ffffff">
+			<WINDOW layout="0,0,720,753" defaultImg="#e68050" align="relative">
+				<IMAGE layout="60,192,629,371" defaultImg="res/login_logo.png" />
+			</WINDOW>
+			<WINDOW layout="0,753,720,477" defaultImg="#e3e3e3" align="relative">
+				<WINDOW layout="0,44,720,110" align="linear:horizontal|center">
+					<BUTTON layout="110,110" defaultImg="res/login_btn_facebook_normal.png" />
+					<BUTTON layout="110,110" defaultImg="res/login_btn_google_normal.png" />
+					<BUTTON layout="110,110" defaultImg="res/login_btn_naver_normal.png" />
+					<BUTTON layout="110,110" defaultImg="res/login_btn_kakao_normal.png" />
+				</WINDOW>
+				<WINDOW layout="0,154,720,110" align="linear:horizontal|center">
+					<LABEL layout="110,110" text="페이스북" fontSize="25" minFontSize="-1" textAlign="center" textColor="#bebebe" />
+					<LABEL layout="110,110" text="Google" fontSize="25" minFontSize="-1" textAlign="center" textColor="#bebebe" />
+					<LABEL layout="110,110" text="네이버" fontSize="25" minFontSize="-1" textAlign="center" textColor="#bebebe" />
+					<LABEL layout="110,110" text="카카오톡" fontSize="25" minFontSize="-1" textAlign="center" textColor="#bebebe" />
+				</WINDOW>
+				<IMAGE layout="0,267,720,30" defaultImg="res/login_div.png" />
+				<STYLEBUTTON layout="33,348,311,79" defaultImg="#ebebeb" text="회원가입" fontSize="30" minFontSize="-1" textAlign="center" textColor="#6b6b6b" shape="roundRect(10)" borderStyle="solid:2|#b8b8b8"
+					onClick="container.open('loginPopup.xml', 'root.login')" />
+				<STYLEBUTTON layout="376,348,311,79" defaultImg="#f08046" text="메인 Go" fontSize="30" minFontSize="-1" textAlign="center" textColor="#ffffff" shape="roundRect(10)" borderStyle="solid:2|#e25f1a"
+					onClick="container.open('main.xml','root.main')" />
+			</WINDOW>
+		</WINDOW>
+	</UILAYOUT>
+</MOML>
+		

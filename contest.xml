@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by http://cafe.naver.com/citrineframework
+	You can freely copy, distribute, modify for commercial or non-commercial purposes.
+-->
+<MOML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui.xsd" version="1.1.1">
+	<UILAYOUT portrait="720,1036" landscape="720,1036">
+		<WINDOW layout="0,0,720,1036" defaultImg="#ffffff" scroll="vertical" scrollBarVisible="false">
+			<WINDOW layout="0,0,720,2466" defaultImg="res/contestDetail.png">
+			</WINDOW>
+		</WINDOW>
+	</UILAYOUT>
+</MOML>
+		     

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by http://cafe.naver.com/citrineframework
+	You can freely copy, distribute, modify for commercial or non-commercial purposes.
+-->
+<MOML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui.xsd" version="1.1.1">
+	<UILAYOUT portrait="720,1036" landscape="720,1036">
+		<WINDOW layout="0,0,720,1036" defaultImg="#f2f2f2">
+			<LIST2 layout="0,0,720,1036" dataSource="data/feeddata.xml" dataList="/DATA/LIST" divider="none">
+				<LISTLAYOUT>
+					<WINDOW id="listitem" layout="20,20,680,562">
+						<STYLEBUTTON layout="0,0,680,446" defaultImg="{xpath.evaluate('./image/text()')}" shape="roundRect(10,10,0,0)" />
+						<IMAGE layout="0,316,680,130" defaultImg="res/hp_gradient.9.png" />
+						<LABEL layout="20,383,400,45" text="{xpath.evaluate('./text1/text()')}" fontSize="30" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#ffffff" textShadow="#90000000" />
+						<STYLEBUTTON layout="0,446,680,116" defaultImg="#ffffff" shape="roundRect(0,0,10,10)" borderStyle="solid:2|#d6d6d6">
+							<IMAGE layout="25,20,75,75" defaultImg="res/home_menu_icon_featured.png" />
+							<LABEL layout="123,0,400,116" text="{xpath.evaluate('./text2/text()')}" fontSize="30" minFontSize="-1" textAlign="vCenter" fontStyle="bold" textColor="#000000" />
+						</STYLEBUTTON>
+					</WINDOW>
+				</LISTLAYOUT>
+			</LIST2>
+		</WINDOW>
+	</UILAYOUT>
+</MOML>
+		     

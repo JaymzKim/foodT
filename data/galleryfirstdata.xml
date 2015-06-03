@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<ITEM image="res/tutorial_screen_intro.png" image2="res/tutorial_title_foodtalk.png" name="아직도 레시피 검색하나요? 이제는 재밌고 쉬운 레시피앱으로!" />
+	<ITEM image="res/tutorial_screen_feed.png" image2="res/tutorial_title_feed.png" name="나만의 레시피를 친구들과 나누고 공감해 보세요!" />
+	<ITEM image="res/tutorial_screen_create.png" image2="res/tutorial_title_create.png" name="다양한 컨텐츠를 사용해 더욱 풍성하게 즐길 수 있어요!" />
+	<ITEM image="res/tutorial_screen_comment.png" image2="res/tutorial_title_comment.png" name="다양한 이모티콘으로 더욱 재밌는 댓글을 달아주세요." />
+	<ITEM image="res/tutorial_screen_review.png" image2="res/tutorial_title_review.png" name="따라해 본 나만의 레시피로 다양한 스티커를 붙여 리뷰를 남겨보세요!" />
+	<ITEM image="res/tutorial_screen_contest.png" image2="res/tutorial_title_contest.png" name="이 요리는 내가 자신있다! 주제에 맞는 마나의 레시피를 올려봐요. 내가 랭킹 1위 하는 그 날까지!" />
+</DATA>
